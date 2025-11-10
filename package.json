@@ -1,12 +1,17 @@
 {
   "name": "funsun",
   "version": "1.0.0",
+  "description": "Проект автоматизации UI-тестирования сайта Fan&Sun с использованием Playwright",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "test": "npx playwright test",
+   "test:headed": "npx playwright test --headed",
+   "test:report": "npx playwright show-report reports/html"
   },
-  "keywords": [],
+  "keywords": ["playwright", "ui-testing", "funsun"],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
 }
